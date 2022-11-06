@@ -9,7 +9,7 @@ import { FooterComponent, NavbarComponent } from "./componentes/";
     FooterComponent
   ],
   imports: [
-    CommonModule
+    CommonModule 
   ],
   exports: [
     NavbarComponent,

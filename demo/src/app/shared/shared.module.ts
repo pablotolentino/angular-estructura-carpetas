@@ -1,11 +1,11 @@
 import { CommonModule } from "@angular/common";
 import { NgModule } from "@angular/core";
-import { AccesoDenegadoComponent, BaseComponent, ErrorResponseComponent } from "./componentes"
+import { FormsModule,ReactiveFormsModule } from "@angular/forms";
+import { AccesoDenegadoComponent,  ErrorResponseComponent } from "./componentes";
 @NgModule({
     declarations: [
         ErrorResponseComponent,
-        AccesoDenegadoComponent,
-        BaseComponent
+        AccesoDenegadoComponent
     ],
     imports: [
         CommonModule
@@ -13,7 +13,9 @@ import { AccesoDenegadoComponent, BaseComponent, ErrorResponseComponent } from "
     exports: [
         ErrorResponseComponent,
         AccesoDenegadoComponent,
-        BaseComponent
+        CommonModule,
+        FormsModule,
+        ReactiveFormsModule
     ]
 })
 export class SharedModule { }

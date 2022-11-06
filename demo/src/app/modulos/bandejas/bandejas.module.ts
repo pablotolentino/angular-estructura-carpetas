@@ -1,5 +1,4 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
 
 import { BandejasRoutingModule } from './bandejas-routing.module';
 import { EvaluacionComponent, FirmadosComponent, FormalizacionComponent } from './paginas';
@@ -14,10 +13,9 @@ import { SharedModule } from 'src/app/shared/shared.module';
     FirmadosComponent,
     MenuComponent
   ],
-  imports: [
-    CommonModule,
+  imports: [   
     BandejasRoutingModule,
-    SharedModule
+    SharedModule    
   ],
   exports:[
     MenuComponent

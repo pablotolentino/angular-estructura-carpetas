@@ -1,13 +1,19 @@
-import { Component } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-base',
-  templateUrl: './base.component.html',
-  styleUrls: ['./base.component.css']
+  template: ''
 })
-export class BaseComponent {
+export class BaseComponent implements OnDestroy {
 
-  constructor() { }
+  constructor() { 
+    console.log('entra construcción base');
+  }
+
+
+  ngOnDestroy(): void {
+    console.log('OnDestroy base');
+  }
  
 
 }

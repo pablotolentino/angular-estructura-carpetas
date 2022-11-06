@@ -1,5 +1,5 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
-import { BaseComponent, ErrorResponseComponent } from 'src/app/shared/componentes';
+import { Component,  OnDestroy,  OnInit, ViewChild } from '@angular/core';
+import {  ErrorResponseComponent,BaseComponent } from 'src/app/shared/componentes';
 import { DestinosCredito, Productos } from 'src/app/shared/enums';
 
 @Component({
@@ -7,26 +7,28 @@ import { DestinosCredito, Productos } from 'src/app/shared/enums';
   templateUrl: './evaluacion.component.html',
   styleUrls: ['./evaluacion.component.css']
 })
-export class EvaluacionComponent extends BaseComponent implements OnInit {
+export class EvaluacionComponent extends BaseComponent  {
 
   @ViewChild('errorComponent') set errorResponseComponent(directive: ErrorResponseComponent) {
 
   };
+
+ 
   constructor() {
     super();
   }
 
-  ngOnInit(): void {
-    if (DestinosCredito.Sustitucion == 1) {
+  // ngOnInit(): void {
+  //   if (DestinosCredito.Sustitucion == 1) {
 
-    }
+  //   }
 
-    if (Productos.HipotecaSantander == 0) {
+  //   if (Productos.HipotecaSantander == 0) {
 
-    }
-    if (!this.errorResponseComponent) {
-      console.log('existe');
-    }
-  }
+  //   }
+  //   if (!this.errorResponseComponent) {
+  //     console.log('existe');
+  //   }
+  // }
 
 }
