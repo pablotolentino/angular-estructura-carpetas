@@ -5,7 +5,6 @@ import { EvaluacionComponent, FirmadosComponent, FormalizacionComponent } from '
 import { MenuComponent } from './componentes';
 import { SharedModule } from 'src/app/shared/shared.module';
 
-
 @NgModule({
   declarations: [
     EvaluacionComponent,
@@ -13,11 +12,11 @@ import { SharedModule } from 'src/app/shared/shared.module';
     FirmadosComponent,
     MenuComponent
   ],
-  imports: [   
+  imports: [
     BandejasRoutingModule,
-    SharedModule    
+    SharedModule,
   ],
-  exports:[
+  exports: [
     MenuComponent
   ]
 })
